@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido-Majestic Jewels</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+        
+        .lista{
+            width: 95%;
+            height: 20%;
+            position: absolute;
+            bottom: 600px;
+            border-radius: 5px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #BFC9CA;
+        }
+
+        li {
+            float: left;
+            font-size: 20px;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        li a:hover {
+            background-color: #edbb99de;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-image: url("img/bg.jpeg");
+        
+
+        }
+        
+        
+
+        .container{
+            max-width: 700px;
+            width: 100%;
+            padding: 25px 30px;
+            border-radius: 5px;
+            background: #283048; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #28304885, #85939886); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #28304880, #8593988a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            position: static;
+        }
+        .container .title{
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+        .container .title::before{
+            content: ´´;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        .container form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 12px 0;
+        }
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+
+        }
+        .user-details .input-box .details{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+        .user-details .input-box select{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid{
+            border-color: #DC7633;
+        }
+        form .gender-details .gender-title{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        form .gender-details .category{
+            display: flex;
+            width: 80%;
+            background: red;
+            margin: 14px 0;
+            justify-content: space-between;
+        }
+
+        form .button input{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            background: linear-gradient(135deg, #867569, #BFC9CA);
+            border: none;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            padding: 7px 7px;
+        }
+        form .button input:hover{
+            background: linear-gradient(-135deg, #EDBB99, #BFC9CA);
+        }
+        @media (max-width: 584px) {
+            .container{
+            max-width: 100%;
+
+            }
+            form .user-details .input-box{
+            margin-bottom: 15px;
+            width: 100%;
+
+        }
+        form .gender-details .category{
+            width: 100%;
+        }
+        .container form .user-details{
+            max-height: 300px;
+            overflow-y: scroll;
+            
+        }
+        .user-details::-webkit-scrollbar{
+            width: 0;
+        }
+        
+    }
+
+
+
+        
+    </style>
+</head>
+<body >
+    <body>
+        <div class="lista">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#quie">Acerca de</a></li>
+                <li><a href="index.html#pro">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        
+    <div class="container">
+     <div class="title"><h1>Pedido</h1></div>
+     <form action="#" autocomplete="off">
+         <div class="user-details">
+            <div class="input-box">
+                <span class="details"><h2>Nombre</h2></span>
+                <input type="text" maxlength="30" placeholder="Nombre del pedido" autofocus required>
+            </div>
+            <div class="input-box">
+                <span class="details"><h2>Telefono</h2></span>
+                <input type="text" maxlength="8" placeholder="Número de telefono"required>
+            </div>
+         <div class="input-box">
+             <span class="details"><h2>Email</h2></span>
+             <input type="text" placeholder="Dirección de email" required>
+         </div>
+         <div class="input-box">
+            <span class="details"><h2>Direccíon</h2></span>
+            <select name="joya" id="joya" placeholder="Lugar de la entrega" required>
+                <option value="Honduras">Atlántida</option>
+                <option value="Honduras">Colón</option>
+                <option value="Honduras">Comayagua</option>
+                <option value="Honduras">Copán</option>
+                <option value="Honduras">Cortés</option>
+                <option value="Honduras">Choluteca</option>
+                <option value="Honduras">El Paraíso</option>
+                <option value="Honduras">Francisco Morazán</option>
+                <option value="Honduras">Gracias a Dios</option>
+                <option value="Honduras">Intibucá</option>
+                <option value="Honduras">Islas de la Bahía</option>
+                <option value="Honduras">La Paz</option>
+                <option value="Honduras">Lempira</option>
+                <option value="Honduras">Ocotepeque</option>
+                <option value="Honduras">Olancho</option>
+                <option value="Honduras">Santa Bárbara</option>
+                <option value="Honduras">Valle</option>
+                <option value="Honduras">Yoro</option>
+
+            </select>
+        </div>
+        <div class="input-box">
+            <span class="details"><h2>Metodo de pago</h2></span>
+            
+            <select name="joya" id="joya" placeholder="Metodo de pago" required>
+                <option value="Honduras">Tarjeta de credito</option>
+                <option value="Honduras">PayPal</option>
+                <option value="Honduras">Efectivo</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <span class="details"><h2>Fecha aproximada</h2></span>
+            <select name="joya" id="joya" placeholder="fecha" required>
+            <span class="details"><h2>Fecha aproximada</h2></span>
+                <option value="Honduras">una semana</option>
+                <option value="Honduras">dos semanas</option>
+                <option value="Honduras">tres semanas</option>
+                <option value="Honduras">un mes</option>
+            </select>
+        </div>
+    </div>
+        <div class="button">
+            <input type="submit" value="Realizar Pedido">
+          </div> 
+    </form>
+  </div>
+    
+</body>
+</html>
